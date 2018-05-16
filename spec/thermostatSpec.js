@@ -20,4 +20,16 @@ describe('Thermostat', function(){
       expect(thermostat.temp).toBeLessThan(DEFAULT_TEMP)
     })
   })
+
+  describe('when power saving mode is on', function(){
+    it('has a maximum temperature of 25', function(){
+      expect(thermostat._maxTemp).toEqual(25)
+    })
+  })
+
+  describe('#psOn', function(){
+    it('sets power saving to true', function(){
+      expect(thermostat.powerSaving).toEqual(true)
+    })
+  })
 })
