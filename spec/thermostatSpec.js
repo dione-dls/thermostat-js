@@ -13,4 +13,11 @@ describe('Thermostat', function(){
       expect(thermostat.temp).toBeGreaterThan(DEFAULT_TEMP)
     })
   })
+
+  describe('#down', function(){
+    it('can decrease the temperature', function(){
+      thermostat.down()
+      expect(thermostat.temp).toBeLessThan(DEFAULT_TEMP)
+    })
+  })
 })
