@@ -1,3 +1,9 @@
+const DEFAULT_TEMP = 20;
+
 function Thermostat() {
-  this.defaultTemp = 20
+  this.temp = DEFAULT_TEMP;
+}
+
+Thermostat.prototype.up = function (){
+  this.temp ++
 }
