@@ -1,4 +1,4 @@
-
+<script src= "http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID={5e834a73cac3008730469e7587b95e90}"></script>
 $(document).ready(function() {
   thermostat = new Thermostat();
   $('#temp').html(thermostat.temp);
