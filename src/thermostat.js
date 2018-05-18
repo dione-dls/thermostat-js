@@ -26,6 +26,9 @@ Thermostat.prototype.down = function (){
 
 Thermostat.prototype.psOn = function (){
   this.powerSaving = true
+  if (this.temp > 25){
+    this.temp = 25;
+  }
 }
 
 Thermostat.prototype.psOff = function (){
